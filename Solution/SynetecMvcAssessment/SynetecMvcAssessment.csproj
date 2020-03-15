@@ -150,6 +150,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BusinessLayer\BonusAllocationService.cs" />
     <Compile Include="Controllers\BonusPoolController.cs" />
     <Compile Include="Data\BonusPoolModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -175,6 +176,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\Exceptions\SyntecMvcException.cs" />
     <Compile Include="Models\BonusPoolCalculatorModel.cs" />
     <Compile Include="Models\BonusPoolCalculatorResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
