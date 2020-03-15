@@ -12,8 +12,14 @@ namespace InterviewTestTemplatev2.Data
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
-    public partial class MvcInterviewV3Entities1 : DbContext
+
+    public interface IMvcInterviewV3Entities1
+    {
+        DbSet<HrDepartment> HrDepartments { get; set; }
+        DbSet<HrEmployee> HrEmployees { get; set; }
+    }
+
+    public partial class MvcInterviewV3Entities1 : DbContext, IMvcInterviewV3Entities1
     {
         public MvcInterviewV3Entities1()
             : base("name=MvcInterviewV3Entities1")

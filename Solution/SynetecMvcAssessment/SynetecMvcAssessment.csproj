@@ -189,6 +189,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\Exceptions\SyntecMvcException.cs" />
+    <Compile Include="Infrastructure\NinjectControllerFactory.cs" />
+    <Compile Include="Infrastructure\NinjectDiFactory.cs" />
     <Compile Include="Models\BonusPoolCalculatorModel.cs" />
     <Compile Include="Models\BonusPoolCalculatorResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
